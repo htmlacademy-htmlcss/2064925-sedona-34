@@ -100,8 +100,8 @@
                         <legend class="catalog-filter-title">Стоимость,₽</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
-                                <input type="text" id="control" name="cost-ruble" value="0" placeholder="от">
-                                <input type="text" id="control" name="cost-ruble" value="9000" placeholder="до">
+                                <input type="text" id="control-from" name="cost-ruble" value="0" placeholder="от">
+                                <input type="text" id="control-before" name="cost-ruble" value="9000" placeholder="до">
                                 <input type="range" min="0" max="12000" step="1" value="9000">
                             </li>
                         </ul>
@@ -112,23 +112,23 @@
             </section>
             <h2 class="search-result">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
-                <ul class="sorting">
-                    <li class="sorting-itme">
-                        <option value="popular">Сначала популярное</option>
-                        <option value="cheap">Сначала дешёвые</option>
-                        <option value="expensive">Сначала дорогое</option>
-                    </li>
-                </ul>
+                <option value="popular">Сначала популярное</option>
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогое</option>
             </select>
-            <a class="button" href="#">
-                <span class="visually-hidden">Показать несколько карточек</span>
-            </a>
-            <a class="button" href="#">
-                <span class="visually-hidden">Показать по одной карточке</span>
-            </a>
-            <a class="button" href="#">
-                <span class="visually-hidden">Показать списком</span>
-            </a>
+            <ul class="type-cards-list">
+                <li class="type-cards-item">
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Показать несколько карточек</span>
+                    </a>
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Показать по одной карточке</span>
+                    </a>
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Показать списком</span>
+                    </a>
+                </li>
+            </ul>
             <ul class="housing-list">
                 <li class="housing-card">
                     <a class="housing-card-link" href="#">
@@ -199,8 +199,8 @@
                     <a class="pagination-link" href="#">10</a>
                 </li>
             </ul>
+            <h2 class="search-quantity">Гостиниц на странице:</h2>
             <select class="select-quantity" aria-label="Количество гостиниц на странице">
-                <h2 class="search-quantity">Гостиниц на странице:</h2>
                 <option value="four">4</option>
                 <option value="six">6</option>
                 <option value="eight">8</option>
@@ -217,35 +217,35 @@
                 </form>
             </section>
         </main>
+        <footer class="page-footer">
+            <section class="footer-social">
+                <h2 class="visually-hidden">Социальные сети</h2>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a class="button" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Вконтакте</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="https://t.me/htmlacademy">
+                            <span class="visually-hidden">Телеграмм</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually-hidden">Ютуб</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="contact-phone">
+                <h2 class="visually-hidden">Контактный номер</h2>
+                <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </section>
+            <section class="logo-html-academi">
+                <h2 class="visually-hidden">Логотип html academi</h2>
+                <img class="logo-html-academi" scr="#" alt="Логотип html academi">
+            </section>
+        </footer>
     </body>
-    <footer class="page-footer">
-        <section class="footer-social">
-            <h2 class="visually-hidden">Социальные сети</h2>
-            <ul class="footer-social-list">
-                <li class="footer-social-item">
-                    <a class="button" href="https://vk.com/htmlacademy">
-                        <span class="visually-hidden">Вконтакте</span>
-                    </a>
-                </li>
-                <li class="footer-social-item">
-                    <a class="button" href="https://t.me/htmlacademy">
-                        <span class="visually-hidden">Телеграмм</span>
-                    </a>
-                </li>
-                <li class="footer-social-item">
-                    <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                        <span class="visually-hidden">Ютуб</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="contact-phone">
-            <h2 class="visually-hidden">Контактный номер</h2>
-            <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
-        <section class="logo-html-academi">
-            <h2 class="visually-hidden">Логотип html academi</h2>
-            <img class="logo-html-academi" scr="#" alt="Логотип html academi">
-        </section>
-    </footer>
 </html>
